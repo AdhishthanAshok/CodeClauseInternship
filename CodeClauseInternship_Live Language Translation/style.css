@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 900px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.translator_property {
+  border: 1px solid #c7c7c783;
+}
+select {
+  background-color: white;
+}
+.translator_property .nuv_item {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 0 20px;
+}
+.translator_property .nuv_item li select {
+  outline: none;
+  border-style: none;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #606060;
+  cursor: pointer;
+  transition: all 0.3 ease-out;
+}
+.translator_property .nuv_item li select:hover {
+  color: #111;
+}
+.bx-transfer {
+  font-size: 22px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.bx-transfer:hover {
+  color: #111;
+}
+
+.write_box {
+  display: flex;
+}
+.Property_trans {
+  background-color: #606060;
+}
+.Property_from,
+.Property_trans {
+  width: 100%;
+  position: relative;
+}
+.write_box textarea {
+  width: 100%;
+  height: 250px;
+  border-style: none;
+  outline: none;
+  resize: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #606060;
+  position: relative;
+}
+.write_box .icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

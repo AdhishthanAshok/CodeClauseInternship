@@ -3,17 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Live Tranlator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <label for="" id="alabel"> Side A</label> <br />
-    <input type="text" id="atextbox" /><br />
-    <label for="" id="blabel"> Side B</label> <br />
-    <input type="text" id="btextbox" /><br />
-    <button type="button" id="submitButton">Submit</button><br />
-    <label id="clabel"></label> <br />
-
-    <script src="first.js"></script>
+    <div class="container">
+      <div class="translator_property">
+        <ul class="nuv_item">
+          <li>
+            <select>
+              <option value="en-GB">English</option>
+              <option value="en-GB">Bengali</option>
+              <option value="en-GB">Hindi</option>
+            </select>
+          </li>
+          <li class="bx bx-transfer"></li>
+          <li>
+            <select>
+              <option value="en-GB">Hindi</option>
+              <option value="en-GB">Bengali</option>
+              <option value="en-GB">English</option>
+            </select>
+          </li>
+        </ul>
+        <div class="write_box">
+          <div class="Property_from">
+            <textarea
+              maxlength="5000"
+              class="fromText"
+              placeholder="Enter Your Text...."
+            ></textarea>
+            <div class="icons">
+              <span class="bx bx-volume-full"></span>
+              <div class="code_length">0/5,000</div>
+            </div>
+          </div>
+          <div class="Property_trans">
+            <textarea class="toTranslate"> </textarea>
+            <div class="icons">
+              <span class="bx bx-volume-full"></span>
+              <span class="bx bx-copy"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
