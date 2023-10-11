@@ -99,7 +99,7 @@ h1{
   padding: 10px 20px;
   margin: 0;
   font-size: 20px;
-  color: #e6e0e0;
+  color: aqua;
   position: relative;
 }
 .write_box textarea:nth-child(1) {
@@ -134,7 +134,7 @@ h1{
 .icons .bx:hover {
   scale: 1.2;
   background: #000000;
-  color: rgb(255, 255, 255);
+  color: aqua;
 }
 
 .code_length{
