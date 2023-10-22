@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgb(52, 52, 52),
+    rgb(159, 154, 154),
+    rgb(52, 52, 52)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+  position: relative;
+  margin-top: 60px;
+}
+
+h2 {
+  display: inline;
+  position: relative;
+  top: 20px;
+  margin: 50px 0 0 90px;
+  padding: 8px 7px 8px 7px;
+  border-radius: 30px;
+  background-color: #727070;
+}
+h4.balance {
+  color: black;
+}
+h1.balance {
+  color: rgb(5, 0, 162);
+}
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #000000;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #a92719;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #000000;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #009c41;
+}
+
+.list li.minus {
+  border-right: 5px solid #ad1504;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #c00000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
